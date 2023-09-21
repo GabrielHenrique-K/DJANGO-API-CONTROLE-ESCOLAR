@@ -17,6 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
+
 from Controle.views.alunos.criarAlunosView import CriarAluno
 from Controle.views.alunos.detalhesAlunosViews import DetalhesAluno
 from Controle.views.alunos.listarAlunosViews import ListarAlunos
@@ -32,11 +33,14 @@ from Controle.views.disciplinas.listarDisciplinasViews import ListarDisciplinas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('controle/', CriarAluno.as_view()),
     path('controle/alunos/', ListarAlunos.as_view()),
     path('controle/alunos/<int:id>/', DetalhesAluno.as_view()),
     path('controle/alunos/<int:aluno_id>/tarefas/', ListarTarefasAluno.as_view()),
+    path('controle/ntarefa', CriarTarefa.as_view()),
     path('controle/disciplinas/', ListarDisciplinas.as_view()),
     path('controle/disciplinas/<int:id>/', DetalhesDisciplina.as_view()),
+    path('controle/ndisciplinas/', CriarDisciplina.as_view()),
     path('controle/tarefas/', ListarTarefas.as_view()),
     path('controle/tarefas/<int:id>/', DetalhesTarefa.as_view()),
 ]

@@ -20,4 +20,4 @@ class ListarAlunos(generics.ListAPIView):
 #        serializer = AlunoSerializer(alunos, many=True)
 #        return Response(serializer.data)
 
-    Get retorna todos os metodos criados para listagem.
+    #Get retorna todos os metodos criados para listagem.

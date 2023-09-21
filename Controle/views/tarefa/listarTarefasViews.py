@@ -23,4 +23,4 @@ class ListarTarefas(generics.ListAPIView):
 #
 
 
-    Quando um pedido HTTP GET é feito para esta API, o código recupera todas as tarefas do banco de dados usando Tarefa.objects.all(), em seguida, serializa essas tarefas usando um "TarefaSerializer" com a opção many=True, indicando que estamos lidando com uma lista de objetos.
+    #Quando um pedido HTTP GET é feito para esta API, o código recupera todas as tarefas do banco de dados usando Tarefa.objects.all(), em seguida, serializa essas tarefas usando um "TarefaSerializer" com a opção many=True, indicando que estamos lidando com uma lista de objetos.

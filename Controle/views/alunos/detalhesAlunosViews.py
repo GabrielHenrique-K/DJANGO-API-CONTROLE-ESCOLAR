@@ -41,4 +41,4 @@ class DetalhesAluno(generics.RetrieveUpdateDestroyAPIView):
 #        aluno.delete()
 #        return Response(status=status.HTTP_204_NO_CONTENT)
 
-    Implementa uma "APIView" chamada "DetalhesAluno" que lida com as operações de busca, atualização e exclusão de informações de um aluno específico. A função get_object verifica se um aluno com o ID especificado existe no banco de dados e lança um erro 404 caso contrário. 
+    #Implementa uma "APIView" chamada "DetalhesAluno" que lida com as operações de busca, atualização e exclusão de informações de um aluno específico. A função get_object verifica se um aluno com o ID especificado existe no banco de dados e lança um erro 404 caso contrário. 

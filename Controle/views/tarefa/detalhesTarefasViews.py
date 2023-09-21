@@ -45,4 +45,4 @@ class DetalhesTarefa(generics.RetrieveUpdateDestroyAPIView):
 #        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-    O método get recupera as informações da tarefa com base no ID e retorna essas informações como uma resposta. O método put atualiza as informações da tarefa com base nos dados fornecidos na solicitação e retorna as informações atualizadas ou erros de validação, se houverem.
+   # O método get recupera as informações da tarefa com base no ID e retorna essas informações como uma resposta. O método put atualiza as informações da tarefa com base nos dados fornecidos na solicitação e retorna as informações atualizadas ou erros de validação, se houverem.

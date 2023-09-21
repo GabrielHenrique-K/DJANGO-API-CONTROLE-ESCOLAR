@@ -42,4 +42,4 @@ class DetalhesDisciplina(generics.RetrieveUpdateDestroyAPIView):
    #     disciplina.delete()
    #     return Response(status=status.HTTP_204_NO_CONTENT)
 
-    "DetalhesDisciplina" que lida com operações de busca, atualização e exclusão de informações de uma disciplina específica. A função get_object verifica se uma disciplina com o ID especificado existe no banco de dados e lança um erro 404 caso contrário.
+    #"DetalhesDisciplina" que lida com operações de busca, atualização e exclusão de informações de uma disciplina específica. A função get_object verifica se uma disciplina com o ID especificado existe no banco de dados e lança um erro 404 caso contrário.

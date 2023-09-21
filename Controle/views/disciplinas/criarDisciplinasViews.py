@@ -25,4 +25,4 @@ class CriarDisciplina(generics.CreateAPIView):
 #            return Response(serializer.data, status=status.HTTP_201_CREATED)
 #        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    Uma "APIView" chamada "CriarDisciplina" que é responsável por criar uma nova disciplina. Quando um pedido HTTP POST é feito para esta API com os detalhes da disciplina em formato JSON.
+    #Uma "APIView" chamada "CriarDisciplina" que é responsável por criar uma nova disciplina. Quando um pedido HTTP POST é feito para esta API com os detalhes da disciplina em formato JSON.

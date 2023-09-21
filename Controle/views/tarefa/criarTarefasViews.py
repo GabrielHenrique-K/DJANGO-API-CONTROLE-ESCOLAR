@@ -24,4 +24,4 @@ class CriarTarefa(generics.CreateAPIView):
 #            return Response(serializer.data, status=status.HTTP_201_CREATED)
 #        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    "APIView" chamada "CriarTarefa" que é responsável por criar uma nova tarefa. Quando um pedido HTTP POST é feito para esta API com os detalhes da tarefa em formato JSON, o código verifica se os dados são válidos usando um "TarefaSerializer".
+    #"APIView" chamada "CriarTarefa" que é responsável por criar uma nova tarefa. Quando um pedido HTTP POST é feito para esta API com os detalhes da tarefa em formato JSON, o código verifica se os dados são válidos usando um "TarefaSerializer".

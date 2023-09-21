@@ -29,5 +29,5 @@ class CriarAluno(generics.CreateAPIView):
 #        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-    Cria uma "APIView" chamada "CriarAluno" que permite adicionar um novo aluno. Quando alguém faz uma solicitação de POST para esta API com os detalhes do aluno em formato JSON, o código verifica se os dados são válidos usando um "AlunoSerializer". 
-    Se forem válidos, o aluno é adicionado e a resposta inclui os dados do aluno com um código de status.
+    #Cria uma "APIView" chamada "CriarAluno" que permite adicionar um novo aluno. Quando alguém faz uma solicitação de POST para esta API com os detalhes do aluno em formato JSON, o código verifica se os dados são válidos usando um "AlunoSerializer". 
+    #Se forem válidos, o aluno é adicionado e a resposta inclui os dados do aluno com um código de status.
