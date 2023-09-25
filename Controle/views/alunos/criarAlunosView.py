@@ -6,8 +6,12 @@ from rest_framework.response import Response
 from Controle.models.Alunos import User
 from Controle.serializers.AlunosSerializer import AlunoSerializer
 
+
 class CriarAluno(APIView):
-   def post(self, request, *args, **kwargs):
+    """
+    Criar Aluno baseado em dois modelos.
+    """
+    def post(self, request, *args, **kwargs):
        serializer = AlunoSerializer(data=request.data)
        if serializer.is_valid():
            serializer.save()

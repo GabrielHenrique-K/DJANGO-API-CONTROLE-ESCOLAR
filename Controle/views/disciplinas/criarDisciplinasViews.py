@@ -6,7 +6,10 @@ from Controle.serializers.DisciplinaSerializer import DisciplinaSerializer
 from rest_framework import status
 
 class CriarDisciplina(APIView):
-   def post(self, request, format=None):
+    """
+    Criar Disciplina e lhe da uma descrição.
+    """
+    def post(self, request, format=None):
        serializer = DisciplinaSerializer(data=request.data)
        if serializer.is_valid():
            serializer.save()
