@@ -72,3 +72,54 @@ Com essas etapas concluídas, sua API estará pronta para uso localmente.
 
 A documentação completa da API está disponível [aqui](https://drive.google.com/file/d/1FPlsYdy8ANm1UckuJhp9x30-YeORClWq/view?usp=drive_link).
 
+## Uso/Exemplos
+
+```
+- Json Criar Aluno
+{
+    "nome": "gabriel",
+    "email": "gabriel@senai"
+}
+```
+
+
+## Documentação da API
+
+#### Criar Aluno 🔽
+
+```http
+  POST /controle
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `nome e email` | `Char` | **Obrigatório**. Nome e Email  |
+
+#### Após o POST, retorna o ID gerado, nome e email criados para o Aluno.
+
+#### Retorna Aluno 🔽
+
+```http
+  GET /controle/alunos/${1} (Gerado automaticamente depois do POST de criação)
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do Aluno |
+
+#### Retorna o aluno da ID escolhida podendo alterar suas informações com método PUT, ou Deletar o Aluno.
+
+#### Retorna Todos os Alunos 🔽
+
+```http
+  GET /controle/alunos/ 
+  ```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `/alunos`      | `string` | **Obrigatório**. Aba Alunos |
+
+#### Volta todas as informações de todos os alunos registardos.
+
+
+
