@@ -5,9 +5,15 @@ from Controle.serializers.AlunosSerializer import AlunoSerializer
 
 class ListarAlunos(APIView):
     """
-    Detalha todos os alunos criado no Criar Alunos View. Junto a seu ID, nome, email.
+    Classe de visualização para listar todos os alunos com seus IDs, nomes e emails.
     """
+
     def get(self, request, format=None):
-       alunos = User.objects.all()
-       serializer = AlunoSerializer(alunos, many=True)
-       return Response(serializer.data)
+        # Obtém todos os alunos do banco de dados
+        alunos = User.objects.all()
+
+        # Serializa a lista de alunos para a resposta
+        serializer = AlunoSerializer(alunos, many=True)
+
+        # Retorna a lista de alunos serializados
+        return Response(serializer.data)

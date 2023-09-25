@@ -6,6 +6,8 @@ from Controle.models.Disciplina import Disciplina
 class TarefaSerializer(serializers.ModelSerializer):
     
     class Meta:
-        
+        # Define o modelo associado ao serializador
         model = Tarefa
+        
+        # Define quais campos do modelo serão serializados
         fields = '__all__'

@@ -5,9 +5,15 @@ from Controle.serializers.DisciplinaSerializer import DisciplinaSerializer
 
 class ListarDisciplinas(APIView):
     """
-    Lista todas as disciplinas criadas em Criar Disciplina, Id, nome, e descrição.
+    Classe de visualização para listar todas as disciplinas com seus IDs, nomes e descrições.
     """
+
     def get(self, request, format=None):
-       disciplinas = Disciplina.objects.all()
-       serializer = DisciplinaSerializer(disciplinas, many=True)
-       return Response(serializer.data)
+        # Obtém todas as disciplinas do banco de dados
+        disciplinas = Disciplina.objects.all()
+
+        # Serializa a lista de disciplinas para a resposta
+        serializer = DisciplinaSerializer(disciplinas, many=True)
+
+        # Retorna a lista de disciplinas serializadas
+        return Response(serializer.data)
